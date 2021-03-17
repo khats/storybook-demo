@@ -1,2 +1,2 @@
 # storybook-demo
-Storybook issue demo project
+This is project to reproduce different issues with storybook 
