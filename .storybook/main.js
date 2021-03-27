@@ -10,7 +10,7 @@ const patchWebpackConfig = async (defaultConfig, options) => {
             plugins: [
                 new webpack.DefinePlugin({
                     "process.env.NODE_ENV": JSON.stringify("development"),
-                    "window.FAKE_GLOBAL_FUNCTION": "(function() { return false; })",
+                    "window.FAKE_GLOBAL_FUNCTION": "(function() { return console.log('log from define plugin function'); })",
                 }),
             ],
     })
