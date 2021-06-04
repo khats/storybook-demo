@@ -22,4 +22,5 @@ module.exports = {
     },
     webpackFinal: patchWebpackConfig,
     stories: ["../src/Test.story.tsx"],
+    typescript: { reactDocgen: 'react-docgen' },
 };
