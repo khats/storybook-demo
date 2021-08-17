@@ -9,14 +9,14 @@
     "start": "yarn run start-storybook"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^6.4.0-alpha.24",
-    "@storybook/addon-essentials": "^6.4.0-alpha.24",
-    "@storybook/addon-links": "^6.4.0-alpha.24",
+    "@storybook/addon-actions": "^6.4.0-alpha.30",
+    "@storybook/addon-essentials": "^6.4.0-alpha.30",
+    "@storybook/addon-links": "^6.4.0-alpha.30",
     "@storybook/addon-postcss": "^2.0.0",
-    "@storybook/addon-viewport": "^6.4.0-alpha.24",
-    "@storybook/builder-webpack5": "^6.4.0-alpha.24",
-    "@storybook/manager-webpack5": "^6.4.0-alpha.24",
-    "@storybook/react": "^6.4.0-alpha.24",
+    "@storybook/addon-viewport": "^6.4.0-alpha.30",
+    "@storybook/builder-webpack5": "^6.4.0-alpha.30",
+    "@storybook/manager-webpack5": "^6.4.0-alpha.30",
+    "@storybook/react": "^6.4.0-alpha.30",
     "css-loader": "~4.3.0",
     "file-loader": "~6.1.0",
     "happypack": "~5.0.1",
@@ -32,6 +32,6 @@
     "url-loader": "~4.1.0"
   },
   "resolutions": {
-    "@storybook/react": "6.4.0-alpha.24"
+    "@storybook/react": "6.4.0-alpha.30"
   }
 }
