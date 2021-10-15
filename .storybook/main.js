@@ -1,26 +1,15 @@
-const { mergeConfigs } = require("../utils");
-const webpack = require("webpack");
-
-const patchWebpackConfig = async (defaultConfig, options) => {
-    return mergeConfigs(defaultConfig,
-        {
-        stats: "detailed",
-        resolve : {
-        },
-            plugins: [
-                new webpack.DefinePlugin({
-                    "process.env.NODE_ENV": JSON.stringify("development"),
-                    "window.FAKE_GLOBAL_FUNCTION": "(function() { return console.log('log from define plugin function'); })",
-                }),
-            ],
-    })
-};
+const path = require("path");
 
 module.exports = {
-    core: {
-        builder: "webpack5",
+    features:{
+        storyStoreV7: true
     },
-    webpackFinal: patchWebpackConfig,
+    addons:[
+        {
+            name: require.resolve(
+                path.join(__dirname, "../node_modules/@storybook/react"),
+            ),
+        },
+    ],
     stories: ["../src/Test.story.tsx"],
-    typescript: { reactDocgen: 'react-docgen' },
 };
